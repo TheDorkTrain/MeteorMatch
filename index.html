@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meteor Match</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+</head>
+<body>
+  <button id="heartButt" class="js-modal-trigger" data-target="heartForm">❤️</button>
+  <!--this is from Bulma classic modal-->
+  <div id="heartForm" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <!-- Any other Bulma elements you want -->
+      <form id="form">
+        <label class="label">Physical Attributes</label>
+        <div class="control">
+          <div class="select">
+            <select>
+              <option>Select Dropdown</option>
+              <option>Scales</option>
+              <option>Slimy</option>
+              <option>Feathers</option>
+              <option>Tentacles</option>
+              <option>Tail</option>
+              <option>Horns</option>
+            </select>
+          </div>
+        </div>
+      <div class="field">
+        <label class="label">Age</label>
+        <div class="control">
+          <div class="select">
+            <select>
+              <option>Select dropdown</option>
+              <option>20-30</option>
+              <option>30-50</option>
+              <option>50-100</option>
+              <option>100-200</option>
+              <option>300+</option>
+            </select>
+          </div>
+         </div> 
+        </div>
+        <label class="field">
+          <label class="label">Inerests</label>
+          <div class="control">
+            <div class="select">
+              <select>
+                <option>Select dropdown</option>
+                <option>Music</option>
+                <option>Movies</option>
+                <option>Food</option>
+                <option>Travel</option>
+                <option>Sports</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+          <label class="field">
+            <div class="control">
+              <label class="checkbox">
+                Do you want kids?
+              </label>
+          <label class="field">
+            <div class="control">
+              <label class="radio">
+                <input type="radio" name="question">
+                Yes
+              </label>
+              <label class="radio">
+                <input type="radio" name="question">
+                No
+              </label>
+          </div>
+         </div>
+          </div>    
+    </div>
+    </div>
+    </form>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+  <script src="./assets/js/script.js"></script>
+  </body>
+</html>
+
+<!-- <input type="submit" value="Submit Form" />-->
