@@ -19,3 +19,4 @@ function openModal($el) {
     openModal($target);
   });
 });
+
