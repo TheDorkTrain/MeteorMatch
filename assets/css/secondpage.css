@@ -1,0 +1,36 @@
+* {
+    background-color: black;
+    color: white;
+}
+
+header {
+    border: 3px solid rgb(195, 53, 251);
+    padding: 10px;
+    margin: 20px;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: xx-large;
+    background-image: url(../images/galaxy.jpg);
+    background-size: cover;
+}
+
+.pickup-button {
+    border: 3px solid rgb(195, 53, 251);
+}
+
+.generate-pickup-line {
+    margin: 5px;
+    padding: 5px;
+}
+
+.chatbox {
+    border: 3px solid rgb(195, 53, 251);
+    justify-content: center;
+}
+
+.alien-profile {
+    border: 3px solid rgb(195, 53, 251);
+}
+
+.section-1 {
+    border: 3px solid rgb(195, 53, 251);
+}
