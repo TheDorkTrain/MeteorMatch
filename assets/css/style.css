@@ -1,0 +1,13 @@
+.chatSection {
+    border:5px solid black;
+    width:500px;
+}
+#lastChat {
+    border:5px solid blue;
+    height:50px;
+}
+
+#response {
+    border:5px solid red;
+    height:100px;
+}
