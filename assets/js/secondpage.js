@@ -12,29 +12,29 @@ const options = {
 
 generatePickupLineButt.addEventListener('click', function (){
     if (pingApi.checked) {
-        lastChat.textContent = chatInput.value;
+        lastChat.bioContent = chatInput.value;
     fetch (url, options)
     .then (function (response) {
         return response.json()
     })
     .then (function (data) {
         console.log(data)
-        p.textContent = data.pickup_line
+        p.bioContent = data.pickup_line
     })}
     else {
-        p.textContent= `Are you a telepathic being? Because I can't seem to get you out of my mind, no matter how hard I try`
+        p.bioContent= `Are you a telepathic being? Because I can't seem to get you out of my mind, no matter how hard I try`
     }
 });
 
-const chatButt = document.querySelector("#chatButt");
-const dateChat = document.querySelector("#response");
-const chatInput = document.querySelector("#chatInput");
-const lastChat = document.querySelector("#lastChat");
+const chatButt = document.querySelector(`#chatButt`);
+const dateChat = document.querySelector(`#response`);
+const chatInput = document.querySelector(`#chatInput`);
+const lastChat = document.querySelector(`#lastChat`);
 
-chatButt.addEventListener("click", function() {
+chatButt.addEventListener(`click`, function() {
 
     if (pingApi.checked) {
-        lastChat.textContent = chatInput.value;
+        lastChat.bioContent = chatInput.value;
     const url2 = 'https://chatgpt-42.p.rapidapi.com/conversationgpt4';
     const options2 = {
         method: 'POST',
@@ -64,12 +64,125 @@ chatButt.addEventListener("click", function() {
         return response.json();
     })
     .then(function(data) {
-        dateChat.textContent = `${data.result}`
+        dateChat.bioContent = `${data.result}`
     });
   
     } else {
-        lastChat.textContent = chatInput.value;
-        dateChat.textContent = `Your Chat Partner is busy right now, but they will get back to you in a Galactic Minute (One Month)`;
+        lastChat.bioContent = chatInput.value;
+        dateChat.bioContent = `Your Chat Partner is busy right now, but they will get back to you in a Galactic Minute (One Month)`;
     }
     
 });
+
+localStorage.getItem(`formInput`)
+
+let formData = {};
+function retrievelocal() {
+    const formInput = localStorage.key(`formInput`);
+        const postString = localStorage.getItem(formInput);
+        formData = JSON.parse(postString);
+
+    return formData;}
+retrievelocal();
+console.log(formData); 
+
+    let alienImage = document.getElementById(`alienImage`);
+        if(formData.physical == `Scales`){
+            alienImage.setAttribute(`src`, `https://static.tvtropes.org/pmwiki/pub/images/kroqgar.png`);
+        }; if(formData.physical == `Feathers`){
+            alienImage.setAttribute(`src`, `https://www.wargamer.com/wp-content/sites/wargamer/2022/07/DnD-Aarakocra-Guide-eagle-rogue.jpg`);
+        }; if(formData.physical == `Slimy`){
+            alienImage.setAttribute(`src`, `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgqLhlhUbIVpHjfKnvtbGTqm2B4CzceJN0lw&s`);
+        }; if(formData.physical == `Horns`){
+            alienImage.setAttribute(`src`, `https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEha22Y5teVXCkBFEzE5Bph1lLH9tNTkxY2rSkX5ScLcIYDK5xnAhSXOkVhtutZqj8m07b-3zWd4lAJgwpwcnggwn_bq88OknEgtI0N_bIoC3ch2o2JR4gz7FkLzFvbmcoO3-T7jYG-LtWB9/s1600/clancy-brown.jpg`);
+        }; if(formData.physical == `Tentacles`){
+            alienImage.setAttribute(`src`, `https://static1.srcdn.com/wordpress/wp-content/uploads/2019/04/cgi-davy-jones-pirates-of-the-car.jpg`);
+        }; if(formData.physical == `Tail`){
+            alienImage.setAttribute(`src`, `https://en.wikifur.com/w/images/4/44/Na%27vi.jpg`);
+        };
+
+
+let bioContent = document.getElementById(`bio`);
+    if(formData.physical == `Scales`){
+        bioContent.textContent = `Bio: Very in touch with religion, loves jewelry, enjoys wrestling, carries a big ax everywhere. Is very interested in ${formData.interest}.`;
+    }; if(formData.physical == `Feathers`){
+        bioContent.textContent = `Bio: Loves flying arandom, enjoys fencing, favorite food is worms, will pick you up and carry you arandom. Is very interested in ${formData.interest}.`;
+    }; if(formData.physical == `Slimy`){
+        bioContent.textContent = `Bio: Very wet and sticky, has two mouths (twice as many kisses), lives in a close knit monarchy community, loves a nice game of chase. Is very interested in ${formData.interest}.`;
+    }; if(formData.physical == `Horns`){
+        bioContent.textContent = `Bio: Very tall, loves working out, very muscular, enjoys spending time down at the shooting range. Is very interested in ${formData.interest}.`;
+    }; if(formData.physical == `Tentacles`){
+        bioContent.textContent = `Bio: Loves boats and sailing, loves the ocean, is the captain of his own ship, avid freebooter. Is very interested in ${formData.interest}.`;
+    }; if(formData.physical == `Tail`){
+        bioContent.textContent = `Bio: Loves nature, enjoys riding beasts of the land and sky, avid hunter, loves to craft her own tools. Is very interested in ${formData.interest}.`;
+    };
+
+let nameContent = document.getElementById(`name`);
+    if(formData.physical == `Scales`){
+        nameContent.textContent = `Name: Gronk`;
+    }; if(formData.physical == `Feathers`){
+        nameContent.textContent = `Name: Thesius`;
+    }; if(formData.physical == `Slimy`){
+        nameContent.textContent = `Name: Alora`;
+    }; if(formData.physical == `Horns`){
+        nameContent.textContent = `Name: Horus`;
+    }; if(formData.physical == `Tentacles`){
+        nameContent.textContent = `Name: Javy Dones`;
+    }; if(formData.physical == `Tail`){
+        nameContent.textContent = `Name: Thalia`;
+    };
+
+let speciesContent = document.getElementById(`species`);
+    if(formData.physical == `Scales`){
+        speciesContent.textContent = `Species: Lizardmen`;
+    }; if(formData.physical == `Feathers`){
+        speciesContent.textContent = `Species: Aarakocra`;
+    }; if(formData.physical == `Slimy`){
+        speciesContent.textContent = `Species: Xenomorph`;
+    }; if(formData.physical == `Horns`){
+        speciesContent.textContent = `Species: Devaronian`;
+    }; if(formData.physical == `Tentacles`){
+        speciesContent.textContent = `Species: Squidman`;
+    }; if(formData.physical == `Tail`){
+        speciesContent.textContent = `Species: Na'Vi`;
+    };
+
+let planetContent = document.getElementById(`planet`);
+    if(formData.physical == `Scales`){
+        planetContent.textContent = `Planet: Mazdamundi`;
+    }; if(formData.physical == `Feathers`){
+        planetContent.textContent = `Planet: Welkin`;
+    }; if(formData.physical == `Slimy`){
+        planetContent.textContent = `Planet: Ferrora`;
+    }; if(formData.physical == `Horns`){
+        planetContent.textContent = `Planet: Devaron`;
+    }; if(formData.physical == `Tentacles`){
+        planetContent.textContent = `Planet: Hyrdomundus`;
+    }; if(formData.physical == `Tail`){
+        planetContent.textContent = `Planet: Pandora`;
+    };
+
+    function generateRandomInteger(min, max) {
+        return Math.floor(min + Math.random()*(max - min + 1))}
+
+let ageContent = document.getElementById(`age`);
+    if(formData.age == `20-30`){
+        speciesContent.textContent = `Age: ${generateRandomInteger(20, 30)}`;
+    }; if(formData.age == `30-50`){
+        speciesContent.textContent = `Age: ${generateRandomInteger(30, 50)}`;
+    }; if(formData.age == `50-100`){
+        speciesContent.textContent = `Age: ${generateRandomInteger(50, 100)}`;
+    }; if(formData.age == `100-200`){
+        speciesContent.textContent = `Age: ${generateRandomInteger(100, 200)}`;
+    }; if(formData.age == `300+`){
+        speciesContent.textContent = `Age: ${generateRandomInteger(300, 1000)}`;
+    };
+
+let kidsContent = document.getElementById(`kids`);
+    if(formData.kids == `Yes`){
+        speciesContent.textContent = `# of Kids: ${generateRandomInteger(1, 5)}`;
+    }; if(formData.kids == `Many!`){
+        speciesContent.textContent = `# of Kids: ${generateRandomInteger(10, 500)}`;
+    }; if(formData.kids == `No`){
+        speciesContent.textContent = `No Children`;
+    };
