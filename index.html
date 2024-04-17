@@ -20,8 +20,8 @@
         <label class="label">Physical Attributes</label>
         <div class="control">
           <div class="select">
-            <select>
-              <option>Select Dropdown</option>
+            <select  id="physical">
+              <option value=""disabled selected>Select Dropdown</option>
               <option>Scales</option>
               <option>Slimy</option>
               <option>Feathers</option>
@@ -36,8 +36,8 @@
         <label class="label">Age</label>
         <div class="control">
           <div class="select">
-            <select>
-              <option>Select dropdown</option>
+            <select id="age">
+              <option value=""disabled selected>Select dropdown</option>
               <option>20-30</option>
               <option>30-50</option>
               <option>50-100</option>
@@ -51,8 +51,8 @@
           <label class="label">Inerests</label>
           <div class="control">
             <div class="select">
-              <select>
-                <option>Select dropdown</option>
+              <select id="interest">
+                <option value=""disabled selected>Select dropdown</option>
                 <option>Music</option>
                 <option>Movies</option>
                 <option>Food</option>
@@ -70,20 +70,16 @@
                 Do you want kids?
               </label>
           <label class="field">
-            <div class="control">
-              <label class="radio">
-                <input type="radio" name="question">
-                Yes
-              </label>
-              <label class="radio">
-                <input type="radio" name="question">
-                No
-              </label>
-            </div>
+            <select  id="kids">
+              <option value=""disabled selected>Select dropdown</option>
+              <option>Yes</option>
+              <option>No</option>
+              <option>Many!</option>
+            </select>
           </div>
           <div class = "buttons">
             <div class="control">
-              <button class="button is-success">Submit</button>
+                <button class="button is-success">Submit</button>
             </div>
           </div>
           </div>
