@@ -3,7 +3,7 @@ const physical = document.querySelector("#physical")
 const age = document.querySelector("#age")
 const interest = document.querySelector("#interest")
 const kids = document.querySelector("#kids")
-const submit = document.querySelector(".is-success")
+const submit = document.querySelector(".button")
 
 
 submit.addEventListener('click', function (event) {
