@@ -1,10 +1,18 @@
 const heartButt = document.querySelector("#heartButt");
+const physical = document.querySelector("#physical")
+const age = document.querySelector("#age")
+const interest = document.querySelector("#interest")
+const kids = document.querySelector("#kids")
+const submit = document.querySelector(".is-success")
 
-heartButt.addEventListener('click', function () {
-console.log("he touched the Heartbutt")
-  // 1) Open the Modal
+
+submit.addEventListener('click', function (event) {
+event.preventDefault()
+  localStore()
+  
   // 2) Save Information to Local Storage
-  // 3) Navigate to the Second Page
+  
+  window.location.href = "./secondpage.html";
 });
 
 function openModal($el) {
@@ -20,3 +28,13 @@ function openModal($el) {
   });
 });
 
+function localStore(){
+
+const formInput = {
+  physical: physical.value,
+  age: age.value,
+  interest: interest.value,
+  kids: kids.value,
+}
+localStorage.setItem('formInput', JSON.stringify(formInput));
+}
