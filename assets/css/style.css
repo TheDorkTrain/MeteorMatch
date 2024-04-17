@@ -1,37 +1,45 @@
+header {
+    border: 3px solid rgb(195, 53, 251);
+    padding: 10px;
+    margin: 20px;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: xx-large;
+    background-image: url(../images/galaxy.jpg);
+    background-size: cover;
+}
+
+
 html{
     background-color:black !important
 }
 /*heart*/
 body {
     background-color: rgb(7, 6, 6);
-    
-    
     font-family: Arial, sans-serif;
     text-align: center;
     min-height:100vh;
 }
 
-label{
-    background-color: black;
-    color: rgb(249, 187, 132);
-    font-weight: dark;
-    font-family: Arial, sans-serif;
-   
-}
 
-label.label{
+ /* label{
+    background-color: black;
+    color: rgb(250, 146, 235);
+    font-weight: dark;
+    font-family: Arial, sans-serif; 
+   
+}  */
+
+    label.label{
     background-color: black;
     color: rgb(250, 146, 235);
     font-weight: dark;
     font-family: Arial, sans-serif;
-}
-/*submitbutt{
-    background-color: pastel rgba(232, 195, 148, 0.981); ;
-    color: rgb(249, 247, 247);
-    padding: 20px 40px;
-    margin: 5px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
+} 
 
+.buttons{
+    display: flex;
+    justify-content:center;
+}
+.heartButt{
+    
+}
