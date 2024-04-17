@@ -3,6 +3,10 @@
     color: white;
 }
 
+html{
+    background-color: black;
+}
+
 header {
     border: 3px solid rgb(195, 53, 251);
     padding: 10px;
@@ -11,6 +15,33 @@ header {
     font-size: xx-large;
     background-image: url(../images/galaxy.jpg);
     background-size: cover;
+}
+
+#ping{
+    padding-left: 300px;
+    font-size:20px;
+    background-color: transparent;
+}
+
+.section-1, .section-2{
+    background-image:  url(../images/galaxy.jpg);
+}
+
+#heartConst{
+    background-color: transparent;
+    width: 20px;
+    height: 20px;
+}
+
+.chatSection {
+    border:5px solid black;
+}
+
+#chatInput {
+    height:50px;
+}
+#lastChat {
+    height:250px;
 }
 
 .pickup-button {
@@ -27,10 +58,13 @@ header {
     justify-content: center;
 }
 
-.alien-profile {
+.alien-profile, .section-1, .alien-image, .alien-info, #response, #lastChat {
     border: 3px solid rgb(195, 53, 251);
 }
 
-.section-1 {
-    border: 3px solid rgb(195, 53, 251);
+.alien-image{
+    height:400px;
+}
+.alien-info, #response{
+    height:600px;
 }

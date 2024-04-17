@@ -11,7 +11,6 @@ body {
     min-height:100vh;
 }
 
-
 label{
     background-color: black;
     color: rgb(249, 187, 132);
@@ -25,7 +24,6 @@ label.label{
     color: rgb(250, 146, 235);
     font-weight: dark;
     font-family: Arial, sans-serif;
-
 }
 /*submitbutt{
     background-color: pastel rgba(232, 195, 148, 0.981); ;
@@ -36,3 +34,4 @@ label.label{
     border-radius: 5px;
     cursor: pointer;
 }
+
