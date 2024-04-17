@@ -1,45 +1,45 @@
 header {
-    border: 3px solid rgb(195, 53, 251);
+    border: 3px solid #f61327;
     padding: 10px;
     margin: 20px;
     font-family: "Space Grotesk", sans-serif;
+    color: white;
     font-size: xx-large;
     background-image: url(../images/galaxy.jpg);
     background-size: cover;
 }
 
-
-html{
-    background-color:black !important
+#heartConst{
+    background-color: transparent;
+    width: 20px;
+    height: 20px;
 }
-/*heart*/
+html {
+    background-color: black !important
+}
+
 body {
     background-color: rgb(7, 6, 6);
-    font-family: Arial, sans-serif;
+    font-family: "Space Grotesk", sans-serif;
     text-align: center;
-    min-height:100vh;
+    min-height: 100vh;
 }
 
-
- /* label{
-    background-color: black;
+label.label {
+    background-color: transparent;
     color: rgb(250, 146, 235);
     font-weight: dark;
-    font-family: Arial, sans-serif; 
-   
-}  */
+    font-family: "Space Grotesk", sans-serif;
+}
 
-    label.label{
-    background-color: black;
-    color: rgb(250, 146, 235);
-    font-weight: dark;
-    font-family: Arial, sans-serif;
-} 
-
-.buttons{
+.buttons {
     display: flex;
-    justify-content:center;
+    justify-content: center;
 }
-.heartButt{
-    
+
+#heartButt {
+    background-image: url(../images/knockout.png);
+    background-size: cover;
+    height: 525px;
+    width: 350px;
 }
