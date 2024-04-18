@@ -13,8 +13,40 @@ header {
     background-color: transparent;
     width: 20px;
     height: 20px;
+    
 }
 
+.float{
+    left:50px;
+    width: 100px;
+    height: 200px;
+    position: relative;
+    bottom:-500px;
+    opacity:0;
+    animation-name: example;
+    animation-iteration-count: infinite;
+    animation-duration: 9s;  
+}
+#float2{
+    gap:50px;
+    animation-delay: 3s;
+}
+
+#float3{
+    gap:200px;
+    animation-delay: 2s;
+}
+
+@keyframes example {
+    0%   {bottom:-500px;}
+    5% {opacity:.5}
+    10% {opacity:1}
+    100% {bottom:1000px;}
+  }
+
+html {
+    background-color: black !important
+}
 
 body {
     background-color: rgb(7, 6, 6);

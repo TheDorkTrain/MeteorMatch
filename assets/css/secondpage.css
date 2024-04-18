@@ -1,6 +1,7 @@
 * {
     background-color: black;
     color: white;
+    font-family: "Space Grotesk", sans-serif;
 }
 
 html{
@@ -11,7 +12,6 @@ header {
     border: 3px solid rgb(195, 53, 251);
     padding: 10px;
     margin: 20px;
-    font-family: "Space Grotesk", sans-serif;
     font-size: xx-large;
     background-image: url(../images/galaxy.jpg);
     background-size: cover;
@@ -46,11 +46,20 @@ header {
 
 .pickup-button {
     border: 3px solid rgb(195, 53, 251);
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .generate-pickup-line {
+    flex-basis: 400px;
     margin: 5px;
     padding: 5px;
+}
+
+#sendChat{
+    display: flex;
+    justify-content: center;
 }
 
 .chatbox {
@@ -62,9 +71,17 @@ header {
     border: 3px solid rgb(195, 53, 251);
 }
 
-.alien-image{
-    height:400px;
-}
 .alien-info, #response{
     height:600px;
+}
+
+.alienImage{
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    margin-bottom:16px;
+}
+
+#alienImage{
+    border: 3px solid rgb(195, 53, 251);
 }
