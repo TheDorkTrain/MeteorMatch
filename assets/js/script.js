@@ -43,7 +43,7 @@ function closeModal($el) {
   $el.classList.remove('is-active');
 }
 
-(document.querySelectorAll('.modal-background, .modal-close, .modal-card-head .delete, .modal-card-foot .button') || []).forEach(($close) => {
+(document.querySelectorAll('.modal-close') || []).forEach(($close) => {
   const $target = $close.closest('.modal');
 
   $close.addEventListener('click', () => {
