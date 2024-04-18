@@ -1,5 +1,4 @@
 * {
-    background-color: black;
     color: white;
     font-family: "Space Grotesk", sans-serif;
 }
@@ -7,7 +6,9 @@
 html{
     background-color: black;
 }
-
+.dark {
+    background-color: black;
+}
 header {
     border: 3px solid rgb(195, 53, 251);
     padding: 10px;
@@ -15,6 +16,8 @@ header {
     font-size: xx-large;
     background-image: url(../images/galaxy.jpg);
     background-size: cover;
+    display: flex;
+    justify-content: center;
 }
 
 #ping{
@@ -80,8 +83,11 @@ header {
     display: flex;
     justify-content: center;
     margin-bottom:16px;
+    object-fit: fill;
 }
 
 #alienImage{
     border: 3px solid rgb(195, 53, 251);
+    height: 500px;
+    width: 500px;
 }
