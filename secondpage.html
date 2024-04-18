@@ -12,16 +12,18 @@
     <title>Your Matched Aliens' Profile</title>
 </head>
 
-<header id="">METEOR MATCH <img id="heartConst" src="./assets/images/heart image.png"> <label id="ping">Fetch Api</label><input id="pingswitch" type="checkbox"></header>
+<header id="">METEOR MATCH <img id="heartConst" src="./assets/images/heart image.png"> 
+    <!-- <label id="ping">Fetch Api</label><input id="pingswitch" type="checkbox"> -->
+</header>
 <main class="container columns is-fluid ">
     <section class="section-1 column is-4 mr-1 hero is-fullheight">
         <div class="pickup-button">
             <button class="button is-link is-light generate-pickup-line">Generate Pickup Line</button>
-            <p class="pickup-p">Warning! May Not Be Safe for Work!</p>
+            <p class="pickup-p">❌Warning! May Not Be Safe for Work!❌</p>
         </div>
         <div class="chatbox">
             <section class="chatSection">
-                <p> <input id="chatInput" type ="text"> <button id="chatButt">Send Chat</button> </p>
+                <p id ="sendChat"> <input class="input" id="chatInput" type ="text"> <button class="button is-link is-light" id="chatButt">Send Chat</button> </p>
                 <p id="lastChat"> </p>
                 <p id="response"> </p>
              </section>
@@ -29,15 +31,15 @@
     </section>
     <section class="alien-profile section-2 column is-8 ml-1 hero is-fullheight">
         <div class="alienImage" alt="alien image">
-        <img id="alienImage" alt="Sexy Alien"></div>
-        <div class="alien-info">Your Alien Date's Info:
+        <img class="image is-square is-centered " src="https://bulma.io/assets/images/placeholders/128x128.png" id="alienImage" alt="Sexy Alien"></div>
+        <div class="alien-info"> <b>Your Alien Date's Info:</b>
             <ul>
-                <li id="name"></li>
-                <li id="species"></li>
-                <li id="age"></li>
-                <li id="planet"></li>
+                <li id="name"></li><br>
+                <li id="planet"></li><br>
+                <li id="species"></li><br>
+                <li id="age"></li><br>
+                <li id="kids"></li><br>
                 <li id="bio"></li>
-                <li id="kids"></li>
             </ul>
         </div>
     </section>

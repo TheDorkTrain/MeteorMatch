@@ -1,7 +1,7 @@
-const p = document.querySelector('.pickup-p')
+const p = document.querySelector('.pickup-p');
 const generatePickupLineButt = document.querySelector('.generate-pickup-line')
 const url = 'https://alien-pickup-line.p.rapidapi.com/alien_pickup_line';
-const pingApi = document.querySelector('#pingswitch');
+//const pingApi = document.querySelector('#pingswitch');
 const options = {
 	method: 'GET',
 	headers: {
@@ -11,7 +11,7 @@ const options = {
 };
 
 generatePickupLineButt.addEventListener('click', function (){
-    if (pingApi.checked) {
+
         lastChat.textContent = chatInput.value;
     fetch (url, options)
     .then (function (response) {
@@ -21,10 +21,10 @@ generatePickupLineButt.addEventListener('click', function (){
         console.log(data)
         p.textContent = data.pickup_line
     })}
-    else {
-        p.textContent= `Are you a telepathic being? Because I can't seem to get you out of my mind, no matter how hard I try`
-    }
-});
+//     else {
+//         p.textContent= `Are you a telepathic being? Because I can't seem to get you out of my mind, no matter how hard I try`
+//     }}
+);
 
 localStorage.getItem(`formInput`)
 
@@ -155,7 +155,6 @@ let kidsContent = document.getElementById(`kids`);
     
     chatButt.addEventListener(`click`, function() {
         if(formData.physical == `Scales`){
-            if (pingApi.checked) {
                 lastChat.textContent = chatInput.value;
             const url2 = 'https://chatgpt-42.p.rapidapi.com/conversationgpt4';
             const options2 = {
@@ -189,12 +188,9 @@ let kidsContent = document.getElementById(`kids`);
                 dateChat.textContent = `${data.result}`
             });
           
-            } else {
-                lastChat.textContent = chatInput.value;
-                dateChat.textContent = `Your Chat Partner is busy right now, but they will get back to you in a Galactic Minute (One Month)`;
-            }
+                //dateChat.textContent = `Your Chat Partner is busy right now, but they will get back to you in a Galactic Minute (One Month)`;
+            
         }; if(formData.physical == `Feathers`){
-            if (pingApi.checked) {
                 lastChat.textContent = chatInput.value;
             const url2 = 'https://chatgpt-42.p.rapidapi.com/conversationgpt4';
             const options2 = {
@@ -228,14 +224,12 @@ let kidsContent = document.getElementById(`kids`);
                 dateChat.textContent = `${data.result}`
             });
           
-            } else {
-                lastChat.textContent = chatInput.value;
-                dateChat.textContent = `Your Chat Partner is busy right now, but they will get back to you in a Galactic Minute (One Month)`;
             }
+                // dateChat.textContent = `Your Chat Partner is busy right now, but they will get back to you in a Galactic Minute (One Month)`;
+
            
-        }; if(formData.physical == `Slimy`){
-           
-            if (pingApi.checked) {
+        
+        if(formData.physical == `Slimy`){
                 lastChat.textContent = chatInput.value;
             const url2 = 'https://chatgpt-42.p.rapidapi.com/conversationgpt4';
             const options2 = {
@@ -269,14 +263,11 @@ let kidsContent = document.getElementById(`kids`);
                 dateChat.textContent = `${data.result}`
             });
           
-            } else {
-                lastChat.textContent = chatInput.value;
-                dateChat.textContent = `Your Chat Partner is busy right now, but they will get back to you in a Galactic Minute (One Month)`;
-            }
+            } 
+    
+                // dateChat.textContent = `Your Chat Partner is busy right now, but they will get back to you in a Galactic Minute (One Month)`;
+             if(formData.physical == `Horns`){
 
-        }; if(formData.physical == `Horns`){
-
-            if (pingApi.checked) {
                 lastChat.textContent = chatInput.value;
             const url2 = 'https://chatgpt-42.p.rapidapi.com/conversationgpt4';
             const options2 = {
@@ -310,14 +301,13 @@ let kidsContent = document.getElementById(`kids`);
                 dateChat.textContent = `${data.result}`
             });
           
-            } else {
-                lastChat.textContent = chatInput.value;
-                dateChat.textContent = `Your Chat Partner is busy right now, but they will get back to you in a Galactic Minute (One Month)`;
-            }
+            
+             
+                // dateChat.textContent = `Your Chat Partner is busy right now, but they will get back to you in a Galactic Minute (One Month)`;
+            
            
         }; if(formData.physical == `Tentacles`){
-            
-            if (pingApi.checked) {
+        
                 lastChat.textContent = chatInput.value;
             const url2 = 'https://chatgpt-42.p.rapidapi.com/conversationgpt4';
             const options2 = {
@@ -350,15 +340,10 @@ let kidsContent = document.getElementById(`kids`);
             .then(function(data) {
                 dateChat.textContent = `${data.result}`
             });
-          
-            } else {
-                lastChat.textContent = chatInput.value;
-                dateChat.textContent = `Your Chat Partner is busy right now, but they will get back to you in a Galactic Minute (One Month)`;
-            }
+                // dateChat.textContent = `Your Chat Partner is busy right now, but they will get back to you in a Galactic Minute (One Month)`;
 
         }; if(formData.physical == `Tail`){
 
-            if (pingApi.checked) {
                 lastChat.textContent = chatInput.value;
             const url2 = 'https://chatgpt-42.p.rapidapi.com/conversationgpt4';
             const options2 = {
@@ -391,13 +376,6 @@ let kidsContent = document.getElementById(`kids`);
             .then(function(data) {
                 dateChat.textContent = `${data.result}`
             });
-          
-            } else {
-                lastChat.textContent = chatInput.value;
-                dateChat.textContent = `Your Chat Partner is busy right now, but they will get back to you in a Galactic Minute (One Month)`;
-            }
-           
+                // dateChat.textContent = `Your Chat Partner is busy right now, but they will get back to you in a Galactic Minute (One Month)`;
         };
-    
-        
     });
