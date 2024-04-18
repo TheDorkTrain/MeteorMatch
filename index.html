@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/style.css">
+
 </head>
 <header id="">METEOR MATCH <img id="heartConst" src="./assets/images/heart image.png"> </header>
 <button id="heartButt" class="js-modal-trigger" data-target="heartForm"></button>
@@ -18,7 +19,7 @@
 <main class="container columns is-fluid ">
 
   <body>
-    <div id="heartForm" class="modal">
+    <div id="heartForm" class="modal var(--bulma-modal-content-width)" >
       <div class="modal-background">
         <div class="modal-content">
           <form id="form">
@@ -26,7 +27,7 @@
               <label class="label">Physical Attributes</label>
               <div class="control">
                 <div class="select">
-                  <select id="physical">
+                  <select id="physical" class="input is-medium">
                     <option value="" disabled selected>Select Dropdown</option>
                     <option>Scales</option>
                     <option>Slimy</option>
@@ -42,7 +43,7 @@
               <label class="label">Age</label>
               <div class="control">
                 <div class="select">
-                  <select id="age">
+                  <select id="age" class="input is-medium">
                     <option value="" disabled selected>Select dropdown</option>
                     <option>20-30</option>
                     <option>30-50</option>
@@ -57,7 +58,7 @@
               <label class="label">Interests</label>
               <div class="control">
                 <div class="select">
-                  <select id="interest">
+                  <select id="interest" class="input is-medium">
                     <option value="" disabled selected>Select dropdown</option>
                     <option>Music</option>
                     <option>Movies</option>
@@ -74,7 +75,7 @@
               <div class="control">
                 <label class="select">
                   <label class="field">
-                    <select id="kids">
+                    <select id="kids" class="input is-medium">
                       <option value="" disabled selected>Select dropdown</option>
                       <option>Yes</option>
                       <option>No</option>
@@ -83,7 +84,7 @@
               </div>
               <div class="buttons is-centered">
                 <div class="control">
-                  <button class="button is-link is-light">Submit</button>
+                  <button class="button is-link is-light is-large">Submit</button>
                 </div>
               </div>
             </div>
