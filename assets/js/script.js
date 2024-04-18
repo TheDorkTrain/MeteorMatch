@@ -38,3 +38,15 @@ const formInput = {
 }
 localStorage.setItem('formInput', JSON.stringify(formInput));
 }
+
+function closeModal($el) {
+  $el.classList.remove('is-active');
+}
+
+(document.querySelectorAll('.modal-background, .modal-close, .modal-card-head .delete, .modal-card-foot .button') || []).forEach(($close) => {
+  const $target = $close.closest('.modal');
+
+  $close.addEventListener('click', () => {
+    closeModal($target);
+  });
+});
