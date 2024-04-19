@@ -11,12 +11,14 @@ Lindsey: https://github.com/lindseymaddox9
 Welcome to Meteor Match! This application is designed for users out there looking to take their dating life to an out-of-this-world level.  With Meteor Match, users are paired with an alien based on certain interests and preferences they select in our form.  The user can interact in real time with their new potential date by using the chat box. This is a great way to get to know your match!
 
 ## Technologies Used
+Meteor Match Repository: https://github.com/TheDorkTrain/MeteorMatch
 Bulma CSS Framework: https://bulma.io/
 ChatGPT 4 API by PR Labs: https://rapidapi.com/rphrp1985/api/chatgpt-42
 Alien Pickup Line by Evan Bose: https://rapidapi.com/evanbose3/api/alien-pickup-line
 CSS3 HTML5 Javascript(es6+)
 
 ## Usage
+Meteor Mage Website: https://thedorktrain.github.io/MeteorMatch/
 On the first page of Meteor Matches, the user will want to click the astronaut button to get started. The button directs the user to a form, which is where they will select personal preferences for the kind of alien they want to be paired with.
 ![image](https://github.com/TheDorkTrain/MeteorMatch/assets/164428791/4e3411cc-9e9a-4f78-ad47-80ea933191e6)
 
