@@ -12,7 +12,6 @@ const options = {
 
 generatePickupLineButt.addEventListener('click', function (){
 
-        lastChat.textContent = chatInput.value;
     fetch (url, options)
     .then (function (response) {
         return response.json()
@@ -186,6 +185,7 @@ let kidsContent = document.getElementById(`kids`);
             })
             .then(function(data) {
                 dateChat.textContent = `${data.result}`
+                chatInput.value = "";
             });
           
                 //dateChat.textContent = `Your Chat Partner is busy right now, but they will get back to you in a Galactic Minute (One Month)`;
@@ -222,6 +222,7 @@ let kidsContent = document.getElementById(`kids`);
             })
             .then(function(data) {
                 dateChat.textContent = `${data.result}`
+                chatInput.value = "";
             });
           
             }
@@ -261,6 +262,7 @@ let kidsContent = document.getElementById(`kids`);
             })
             .then(function(data) {
                 dateChat.textContent = `${data.result}`
+                chatInput.value = "";
             });
           
             } 
@@ -299,6 +301,7 @@ let kidsContent = document.getElementById(`kids`);
             })
             .then(function(data) {
                 dateChat.textContent = `${data.result}`
+                chatInput.value = "";
             });
           
             
@@ -339,6 +342,7 @@ let kidsContent = document.getElementById(`kids`);
             })
             .then(function(data) {
                 dateChat.textContent = `${data.result}`
+                chatInput.value = "";
             });
                 // dateChat.textContent = `Your Chat Partner is busy right now, but they will get back to you in a Galactic Minute (One Month)`;
 
@@ -375,6 +379,7 @@ let kidsContent = document.getElementById(`kids`);
             })
             .then(function(data) {
                 dateChat.textContent = `${data.result}`
+                chatInput.value = "";
             });
                 // dateChat.textContent = `Your Chat Partner is busy right now, but they will get back to you in a Galactic Minute (One Month)`;
         };
